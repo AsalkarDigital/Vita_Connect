@@ -1,0 +1,103 @@
+.vc-contact-header {
+  background: var(--bg-warm);
+  padding: 110px 0 36px;
+  border-bottom: 1px solid var(--border);
+}
+
+.vc-contact-header .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-muted);
+}
+
+.vc-form-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.84rem;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.vc-form-input {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background-color: #fff;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.vc-form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.1);
+}
+
+.vc-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vc-benefits-list li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.vc-benefits-list li i {
+  color: #28A745;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.vc-faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.vc-faq-item {
+  border-bottom: 1px solid var(--border-light);
+}
+.vc-faq-item:last-child { border-bottom: none; }
+
+.vc-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 14px 0;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.vc-faq-question i {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+}
+
+.vc-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.vc-faq-answer.open { max-height: 200px; }
+
+.vc-faq-answer p {
+  margin: 0;
+  padding: 0 0 14px;
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

@@ -1,0 +1,105 @@
+.vc-details-header {
+  background: var(--bg-warm);
+  padding: 100px 0 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.vc-details-header .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-muted);
+}
+
+.vc-details-back {
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  font-size: 0.85rem;
+}
+.vc-details-back:hover { color: var(--primary); border-color: var(--primary); }
+
+.vc-details-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: #fff;
+}
+
+.vc-details-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.vc-details-img-badges {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Meta */
+.vc-details-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  background: #fff;
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.vc-details-meta__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.vc-details-meta__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.vc-details-meta__label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.vc-details-meta__value {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.vc-details-cta {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .vc-details-img { height: 260px; }
+  .vc-details-meta { grid-template-columns: 1fr; }
+  .vc-details-cta {
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    background: var(--bg-light);
+    padding: 16px 0;
+    z-index: 10;
+  }
+}

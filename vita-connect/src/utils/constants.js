@@ -1,0 +1,9 @@
+export const APP_NAME = 'VitaConnect';
+export const APP_TAGLINE = 'Your Trusted Local Service Directory';
+export const APP_TAGLINE_MARATHI = 'विटा कनेक्ट — तुमचा विश्वासू सेवा मार्गदर्शक';
+export const CONTACT_PHONE = '91 9766761763';
+export const CONTACT_EMAIL = 'asalkardigital@gmail.com';
+export const PROVIDER_COUNT = '120+';
+export const CATEGORY_COUNT = '12';
+export const USER_COUNT = '500+';
+export const AREA_COUNT = '10+';

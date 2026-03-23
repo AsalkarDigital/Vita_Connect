@@ -1,0 +1,102 @@
+.vc-scard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.vc-scard__img-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: var(--bg-warm);
+}
+
+.vc-scard__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.vc-scard:hover .vc-scard__img {
+  transform: scale(1.05);
+}
+
+.vc-scard__badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vc-scard__body {
+  padding: 18px 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.vc-scard__name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.vc-scard__rating-text {
+  margin-left: 6px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.vc-scard__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 10px;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+
+.vc-scard__meta i {
+  margin-right: 4px;
+  color: var(--primary);
+  font-size: 0.85rem;
+}
+
+.vc-scard__desc {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.vc-scard__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.vc-scard__actions .btn {
+  flex: 1;
+  text-align: center;
+  font-size: 0.82rem;
+  padding: 8px 12px;
+}
+
+@media (max-width: 575.98px) {
+  .vc-scard__img-wrap { height: 180px; }
+}
